@@ -1,0 +1,91 @@
+{% include "base.html" %}
+{% load static %}
+{% include "navigation.html" %}
+<style>
+    body {
+        background-color: #cccccc;
+    }
+</style>
+
+
+{% block content %}
+
+
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+    .container {
+        margin-top: 20px;
+          background-image: url('{% static 'images/hospital-management-system.png' %}');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position:center;
+          background-color: #f0f0f0;
+    }
+    .doctor-patient-section {
+        margin-top: 30px;
+    }
+    .doctor-patient-section h2 {
+        margin-bottom: 15px;
+    }
+    .doctor-patient {
+        margin-bottom: 20px;
+    }
+</style>
+
+
+    <div class="container">
+
+        <h1 class="text-center">Hospital Management System</h1>
+
+        <div>
+            <h2> Welcome to hospital management system</h2>
+            <p>
+                Hospital Management system is a sysytem
+                where you can take any type of services.
+                It is loacated in Tulsipur Dang.
+                It provides different types of services like
+                radiography,
+                different type of sergons
+                with highly reputed doctors.
+            </p>
+        </div>
+
+        <div class="doctor-patient-section">
+            <h2>Doctors</h2>
+            <div class="row">
+                <div class="col-md-4 doctor-patient">
+                    <img src="{% static 'images/Online-Doctor.jpg'%}" alt="Doctor 1" class="img-fluid">
+                    <p>Doctor 1</p>
+                </div>
+                <div class="col-md-4 doctor-patient">
+                    <img src="{% static 'images/doctor.jpg' %}" alt="Doctor 2" class="img-fluid">
+                    <p>Doctor 2</p>
+                </div>
+                <!-- Add more doctors as needed -->
+            </div>
+        </div>
+
+        <div class="doctor-patient-section">
+            <h2>Patients</h2>
+            <div class="row">
+                <div class="col-md-4 doctor-patient">
+                    <img src="{% static 'images/petient1.png' %}" alt="Patient 1" class="img-fluid">
+                    <p>Patient 1</p>
+                </div>
+                <div class="col-md-4 doctor-patient">
+                    <img src="{% static 'images/patient2.png' %}" alt="Patient 2" class="img-fluid">
+                    <p>Patient 2</p>
+                </div>
+                <!-- Add more patients as needed -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+{% endblock content %} {% include 'footer.html' %}
